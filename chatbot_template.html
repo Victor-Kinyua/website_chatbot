@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page Template</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4c6ef5;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 40px;
+      background: linear-gradient(135deg, #e4ecff 0%, #ffffff 100%);
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-text button {
+      padding: 12px 28px;
+      background: #4c6ef5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero-text button:hover {
+      background: #364fc7;
+    }
+
+    .hero img {
+      width: 45%;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      padding: 70px 40px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature-box {
+      width: 28%;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+      transition: 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-box img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      background: #111;
+      color: white;
+      padding: 40px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .footer p {
+      opacity: 0.6;
+      margin-top: 10px;
+    }
+  </style>
+  <script src="https://cresentai.pages.dev/chatbot.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>AI Chatbot template</h1>
+  <nav>
+    <a href="#">Features</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Your Space to Think and Create</h2>
+    <p>Build beautiful pages your way. Organize your life, studies, notes, and everything in between with style.</p>
+    <button>Get Started</button>
+  </div>
+  <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5" alt="Workspace Image" />
+</section>
+
+<section class="section">
+  <h3>Clean. Minimal. Powerful.</h3>
+  <p>Designed to be aesthetic and functional for your workspace.</p>
+
+  <div class="features">
+    <div class="feature-box">
+      <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d" alt="Feature Image" />
+      <h4>Beautiful Layouts</h4>
+      <p>Modern design elements to elevate your page structure.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Feature Image" />
+      <h4>Organized Content</h4>
+      <p>Sleek sections to keep everything in perfect order.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d" alt="Feature Image" />
+      <h4>Inspired Creativity</h4>
+      <p>Create with a calm and inspiring workspace aesthetic.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <h4>Crafted by free templates</h4>
+  <p>© 2025 Free chatbot agent</p>
+</footer>
+ <chat-widget
+   api_key="YOUR_API_KEY"
+   default-mode="expanded"
+   widget-title="CresentAI support team"
+   title-text-color="white"
+   title-background-color="cadetblue"
+   initial-prompt="Hi there! You're speaking with CresentAI support team agent..."
+   chat-background-color="white"
+   chat-message-background-color="cadetblue"
+   chat-message-text-color="white"
+   enforce-mandatory-userdetails-collection="false"
+   userdetails-text-color="cadetblue"
+   userdetails-label-color="white"
+ ></chat-widget>
+</body>
+</html>
